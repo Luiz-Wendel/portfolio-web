@@ -3,3 +3,27 @@ body {
   color: white;
   margin: 0;
 }
+
+nav {
+  background-color: darkred;
+}
+
+nav ul {
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li {
+  list-style: none;
+  padding: 10px 20px;
+}
+
+nav ul li a {
+  color: white;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+nav ul li a:hover {
+  color: black;
+}
