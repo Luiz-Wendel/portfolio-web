@@ -71,3 +71,17 @@ div#about-section ul#stacks li {
 div#about-section div#external-link a {
   text-decoration: none;
 }
+
+div#contact-section {
+  height: 100vh;
+  text-align: center;
+}
+
+div#contact-section > p {
+  color: darkred;
+}
+
+div#contact-section a {
+  color: white;
+  text-decoration: none;
+}
