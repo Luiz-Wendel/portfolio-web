@@ -1,3 +1,9 @@
+:root {
+  --primary-color: black;
+  --secondary-color: darkred;
+  --text-color: white;
+}
+
 body {
   background-color: black;
   color: white;
@@ -14,7 +20,7 @@ navbar {
 }
 
 navbar nav {
-  background-color: darkred;
+  background-color: var(--secondary-color);
   height: 100%;
 }
 
@@ -35,7 +41,7 @@ navbar nav ul li:last-child {
 }
 
 navbar nav ul li a {
-  color: white;
+  color: var(--text-color);
   font-size: 1.25em;
   font-weight: bold;
   text-decoration: none;
@@ -43,28 +49,39 @@ navbar nav ul li a {
 
 navbar nav ul li a:hover,
 navbar nav ul li a:focus {
-  color: black;
+  color: var(--primary-color);
 }
 
-div#welcome-section {
-  height: 100vh;
-  text-align: center;
+section {
+  height: calc(100vh - 63px);
+  padding-top: 63px;
 }
 
-div#welcome-section img {
+section#welcome-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+section#welcome-section img#profile-photo {
   width: 250px;
   height: 250px;
-  margin: 10px;
-  margin-top: 20vh;
 }
 
-div#welcome-section h2 {
+figure figcaption {
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+}
+
+section#welcome-section h2 {
   margin: 0;
 }
 
-div#welcome-section p {
+section#welcome-section p {
+  color: var(--secondary-color);
   margin: 0;
-  color: darkred;
 }
 
 div#about-section {
