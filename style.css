@@ -1,6 +1,7 @@
 :root {
   --primary-color: black;
   --secondary-color: darkred;
+  --darkgrey: #2f2f2f;
   --text-color: white;
 }
 
@@ -84,26 +85,82 @@ section#welcome-section p {
   margin: 0;
 }
 
-div#about-section {
-  height: 100vh;
-  width: 28vw;
-  margin: 0 auto;
+section#about-section {
+  background-color: var(--darkgrey);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
 }
 
-div#about-section div#about-me, div#about-section div#skills {
-  margin: 50px 0;
+section#about-section h2 {
+  color: var(--secondary-color);
 }
 
-div#about-section ul#stacks {
+section#about-section div:first-of-type {
+  width: 75%;
+  display: flex;
+  justify-content: space-between;
+}
+
+section#about-section div#about-me {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+section#about-section div#about-me p {
+  margin: 0;
+  padding: 5px 0;
+}
+
+section#about-section div#skills {
+  width: 50%;
+  padding: 10px;
+  border: 1px solid var(--secondary-color);
+  border-radius: 2px;
+}
+
+section#about-section div#skills p {
+  text-align: center;
+}
+
+section#about-section ul#stacks {
   padding: 0;
-}
-
-div#about-section ul#stacks li {
   list-style: none;
-  padding: 5px;
+  display: flex;
+  justify-content: space-around;
 }
 
-div#about-section div#external-link a {
+section#about-section ul#stacks li ul {
+  width: 100%;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+}
+
+section#about-section ul#stacks li ul li {
+  padding: 0 10px;
+}
+
+section#about-section ul#stacks li ul li + li {
+  border-left: 1px solid var(--secondary-color);
+}
+
+section#about-section div:last-of-type {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+section#about-section div:last-of-type a {
+  background-color: var(--primary-color);
+  color: var(--text-color);
+  width: fit-content;
+  padding: 15px;
+  border-radius: 5px;
+  font-weight: bold;
   text-decoration: none;
 }
 
