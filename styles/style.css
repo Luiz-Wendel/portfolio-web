@@ -1,3 +1,5 @@
+@import 'animations.css';
+
 :root {
   --primary-color: black;
   --secondary-color: darkred;
@@ -228,10 +230,16 @@ section#contact-section a {
 
 section#contact-section a:hover {
   color: var(--secondary-color);
+  transition: transform 0.5s;
+  transform: translateY(-20px);
 }
 
 section#contact-section a i {
   padding: 0 10px;
+}
+
+section#contact-section a:hover p {
+  text-decoration: underline;
 }
 
 footer {
