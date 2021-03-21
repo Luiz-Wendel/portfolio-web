@@ -262,6 +262,16 @@ footer p a:hover {
   color: var(--primary-color);
 }
 
+@media(max-width: 1554px) {
+  span.xl-only {
+    display: none;
+  }
+
+  section#about-section ul#stacks li ul li + li {
+    border: none;
+  }
+}
+
 @media(max-width: 1164px) {
   section#about-section div:first-of-type {
     height: 50%;
