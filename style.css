@@ -211,11 +211,12 @@ section#contact-section a i {
 }
 
 footer {
-  background-color: darkred;
+  background-color: var(--secondary-color);
   text-align: center;
 }
 
 footer p {
+  margin: 0;
   padding: 20px;
 }
 
@@ -226,5 +227,5 @@ footer p a {
 }
 
 footer p a:hover {
-  color: black;
+  color: var(--primary-color);
 }
