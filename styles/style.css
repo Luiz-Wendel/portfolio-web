@@ -6,8 +6,8 @@
 }
 
 body {
-  background-color: black;
-  color: white;
+  background-color: var(--primary-color);
+  color: var(--text-color);
   margin: 0;
   font-size: 16px;
 }
@@ -42,6 +42,7 @@ navbar nav ul li:last-child {
 }
 
 navbar nav ul li a {
+  display: inline-block;
   color: var(--text-color);
   font-size: 1.25em;
   font-weight: bold;
@@ -56,6 +57,15 @@ navbar nav ul li a:focus {
 section {
   height: calc(100vh - 63px);
   padding-top: 63px;
+}
+
+section > h2, section#contact-section div > h2 {
+  margin: 0;
+  font-size: 3em;
+}
+
+section > p, section#contact-section div > p {
+  font-size: 1.5em;
 }
 
 section:last-of-type {
@@ -78,10 +88,6 @@ figure figcaption {
   width: 1px;
   height: 1px;
   overflow: hidden;
-}
-
-section#welcome-section h2 {
-  margin: 0;
 }
 
 section#welcome-section p {
@@ -130,10 +136,21 @@ section#about-section div#skills p {
 }
 
 section#about-section ul#stacks {
+  width: 100%;
   padding: 0;
   list-style: none;
   display: flex;
   justify-content: space-around;
+}
+
+section#about-section ul#stacks > li::first-line {
+  font-weight: bold;
+  color: var(--secondary-color);
+  text-align: center;
+}
+
+section#about-section ul#stacks > span.border-span {
+  border: 1px solid var(--secondary-color);
 }
 
 section#about-section ul#stacks li ul {
@@ -145,6 +162,7 @@ section#about-section ul#stacks li ul {
 }
 
 section#about-section ul#stacks li ul li {
+  margin-top: 10px;
   padding: 0 10px;
 }
 
@@ -168,6 +186,10 @@ section#about-section div:last-of-type a {
   text-decoration: none;
 }
 
+section#about-section div:last-of-type a:hover {
+  color: var(--secondary-color);
+}
+
 section#contact-section {
   display: flex;
   flex-direction: column;
@@ -182,7 +204,7 @@ section#contact-section div {
 }
 
 section#contact-section div > p {
-  color: darkred;
+  color: var(--secondary-color);
   margin: 0;
 }
 
@@ -200,6 +222,8 @@ section#contact-section a {
   display: flex;
   justify-content: center;
   align-items: center;
+  font-size: 2em;
+  font-weight: 600;
 }
 
 section#contact-section a:hover {
@@ -221,7 +245,7 @@ footer p {
 }
 
 footer p a {
-  color: white;
+  color: var(--text-color);
   font-weight: bolder;
   text-decoration: none;
 }
