@@ -261,3 +261,60 @@ footer p a {
 footer p a:hover {
   color: var(--primary-color);
 }
+
+@media(max-width: 1164px) {
+  section#about-section div:first-of-type {
+    height: 50%;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  section#contact-section div#contact-options {
+    flex-direction: column;
+  }
+}
+
+@media(max-width: 989px) {
+  section > h2, section#contact-section div > h2 {
+    font-size: 2em;
+    text-align: center;
+  }
+
+  section > p, section#contact-section div > p {
+    font-size: 1em;
+    text-align: center;
+  }
+
+  section#welcome-section img#profile-photo {
+    width: 150px;
+    height: 150px;
+  }
+
+  section#about-section div#skills {
+    width: 100%;
+  }
+
+  section#contact-section div#contact-options {
+    width: 100%;
+  }
+}
+
+@media(max-width: 499px) {
+  navbar nav ul {
+    justify-content: space-around;
+  }
+
+  navbar nav ul li:last-child {
+    padding-right: 20px;
+  }
+
+  section#about-section div#skills {
+    overflow-x: scroll;
+    overflow-y: hidden;
+  }
+
+  section#about-section div#external-link {
+    text-align: center;
+  }
+}
