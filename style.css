@@ -58,6 +58,10 @@ section {
   padding-top: 63px;
 }
 
+section:last-of-type {
+  height: calc(100vh - 63px - 58px);
+}
+
 section#welcome-section {
   display: flex;
   flex-direction: column;
@@ -164,18 +168,46 @@ section#about-section div:last-of-type a {
   text-decoration: none;
 }
 
-div#contact-section {
-  height: 100vh;
-  text-align: center;
+section#contact-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
 }
 
-div#contact-section > p {
+section#contact-section div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+section#contact-section div > p {
   color: darkred;
+  margin: 0;
 }
 
-div#contact-section a {
-  color: white;
+section#contact-section div#contact-options {
+  width: 50%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+section#contact-section a {
+  color: var(--text-color);
   text-decoration: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+section#contact-section a:hover {
+  color: var(--secondary-color);
+}
+
+section#contact-section a i {
+  padding: 0 10px;
 }
 
 footer {
