@@ -11,96 +11,121 @@
       integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w=="
       crossorigin="anonymous"
     />
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="styles/style.css">
   </head>
   <body>
-    <nav>
-      <ul>
-        <li>
-          <a href="#welcome-section"> Welcome </a>
-        </li>
-        <li>
-          <a href="#about-section"> About </a>
-        </li>
-        <li>
-          <a href="#contact-section"> Contact </a>
-        </li>
-      </ul>
-    </nav>
+    <navbar>
+      <nav>
+        <ul>
+          <li>
+            <a href="#welcome-section"> Welcome </a>
+          </li>
+          <li>
+            <a href="#about-section"> About </a>
+          </li>
+          <li>
+            <a href="#contact-section"> Contact </a>
+          </li>
+        </ul>
+      </nav>
+    </navbar>
 
-    <div id="welcome-section">
-      <img
-        id="profile-photo"
-        src="images/profile-pic.png"
-        alt="A photo of myself"
-      />
-      <h2>Hey, I'm Luiz Alexandre Wendel Balbino!</h2>
-      <p>a web developer</p>
-    </div>
+    <main>
+      <section id="welcome-section">
+        <figure>
+          <img
+            id="profile-photo"
+            src="images/profile-pic.png"
+            alt="A photo of myself"
+          />
+          <figcaption>A photo of Luiz Wendel</figcaption>
+        </figure>
 
-    <div id="about-section">
-      <h2>A little bit about me</h2>
-      <div>
-        <div id="about-me">
-          <p>
-            I'm a web developer student @ Trybe with a bachelor degree in
-            Computer Science
-          </p>
-          <p>
-            🇧🇷 I'm from <strong><em>Brazil</em></strong>
-          </p>
-          <p>📍 Living in the capital, <em>Brasília</em></p>
+        <h2>Hey, I'm Luiz Alexandre Wendel Balbino!</h2>
+        <p>a web developer</p>
+      </section>
+
+      <section id="about-section">
+        <h2>A little bit about me</h2>
+        <div>
+          <div id="about-me">
+            <p>
+              I'm a web developer student @ <strong>Trybe</strong> with a bachelor degree in
+              Computer Science
+            </p>
+            <p>
+              🇧🇷 I'm from <strong><em>Brazil</em></strong>
+            </p>
+            <p>📍 Living in the capital, <em>Brasília</em></p>
+          </div>
+          <div id="skills">
+            <p>My <strong>stacks</strong> are:</p>
+            <ul id="stacks">
+              <li>
+                Generic
+                <ul>
+                  <li>
+                    <i class="fab fa-html5" title="HTML 5"></i>
+                    <span class="xl-only">HTML 5</span>
+                  </li>
+                  <li>
+                    <i class="fab fa-css3-alt" title="CSS 3"></i>
+                    <span class="xl-only">CSS 3</span>
+                  </li>
+                  <li>
+                    <i class="fab fa-js"></i>
+                    <span class="xl-only" title="JavaScript">JavaScript</span>
+                  </li>
+                </ul>
+              </li>
+              <span class="border-span"></span>
+              <li>
+                Best
+                <ul>
+                  <li>
+                    <i class="fab fa-react"></i>
+                    <span class="xl-only" title="ReactJS">ReactJS</span>
+                  </li>
+                  <li>
+                    <i class="fab fa-node-js"></i>
+                    <span class="xl-only" title="Node.js">Node.js</span>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </div>
         </div>
-        <div id="skills">
-          <p>My <strong>stacks</strong> are:</p>
-          <ul id="stacks">
-            <li>
-              Generic
-              <ul>
-                <li>HTML 5</li>
-                <li>CSS 3</li>
-                <li>JavaScript</li>
-              </ul>
-            </li>
-            <li>
-              Best
-              <ul>
-                <li>ReactJS</li>
-                <li>Node</li>
-                <li>Flutter</li>
-              </ul>
-            </li>
-          </ul>
+        <div id="external-link">
+          <p>
+            Here comes a great website to learn about many web development
+            subjects:
+          </p>
+          <a href="https://www.pluralsight.com/">Pluralsight Website</a>
         </div>
-      </div>
-      <div id="external-link">
-        <p>
-          Here comes a great website to learn about many web development
-          subjects:
-        </p>
-        <a href="https://www.pluralsight.com/">Pluralsight Website</a>
-      </div>
-    </div>
+      </section>
 
-    <div id="contact-section">
-      <h2>Let's work together...</h2>
-      <p>Which weapon you choose?</p>
+      <section id="contact-section">
+        <div>
+          <h2>Let's work together...</h2>
+          <p>Which weapon you choose?</p>
+        </div>
 
-      <div id="contact-options">
-        <a href="https://github.com/Luiz-Wendel" target="_blank">
-          <i class="fab fa-github"></i>
-          <p>GitHub</p>
-        </a>
-        <a href="mailto: alexandre.lawb@gmail.com" target="_blank">
-          <i class="fas fa-at"></i>
-          <p>Send a mail</p>
-        </a>
-        <a href="https://wa.me/5561982161596" target="_blank">
-          <i class="fab fa-whatsapp"></i>
-          <p>Message me</p>
-        </a>
-      </div>
-    </div>
+        <div id="contact-options">
+          <a href="https://github.com/Luiz-Wendel" target="_blank">
+            <i class="fab fa-github"></i>
+            <p>GitHub</p>
+          </a>
+          <a href="mailto: alexandre.lawb@gmail.com" target="_blank">
+            <i class="fas fa-at"></i>
+            <p>Send a mail</p>
+          </a>
+          <a href="https://wa.me/5561982161596" target="_blank">
+            <i class="fab fa-whatsapp"></i>
+            <p>Message me</p>
+          </a>
+        </div>
+      </section>
+    </main>
 
     <footer>
       <p>Created by <a href="#profile-photo">Luiz Wendel</a> &copy; 2021</p>

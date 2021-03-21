@@ -1,0 +1,13 @@
+navbar nav ul li a:hover {
+  animation: translate-left 1s;
+}
+
+@keyframes translate-left {
+  50% {
+    transform: translateX(-10px);
+  }
+
+  100% {
+    transform: initial;
+  }
+}

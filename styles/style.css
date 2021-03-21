@@ -1,0 +1,330 @@
+@import 'animations.css';
+
+:root {
+  --primary-color: black;
+  --secondary-color: darkred;
+  --darkgrey: #2f2f2f;
+  --text-color: white;
+}
+
+body {
+  background-color: var(--primary-color);
+  color: var(--text-color);
+  margin: 0;
+  font-size: 16px;
+}
+
+navbar {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 999;
+}
+
+navbar nav {
+  background-color: var(--secondary-color);
+  height: 100%;
+}
+
+navbar nav ul {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: flex-end;
+  list-style: none;
+}
+
+navbar nav ul li {
+  padding: 20px;
+}
+
+navbar nav ul li:last-child {
+  padding-right: 50px;
+}
+
+navbar nav ul li a {
+  display: inline-block;
+  color: var(--text-color);
+  font-size: 1.25em;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+navbar nav ul li a:hover,
+navbar nav ul li a:focus {
+  color: var(--primary-color);
+}
+
+section {
+  height: calc(100vh - 63px);
+  padding-top: 63px;
+}
+
+section > h2, section#contact-section div > h2 {
+  margin: 0;
+  font-size: 3em;
+}
+
+section > p, section#contact-section div > p {
+  font-size: 1.5em;
+}
+
+section:last-of-type {
+  height: calc(100vh - 63px - 58px);
+}
+
+section#welcome-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+section#welcome-section img#profile-photo {
+  width: 250px;
+  height: 250px;
+}
+
+figure figcaption {
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+}
+
+section#welcome-section p {
+  color: var(--secondary-color);
+  margin: 0;
+}
+
+section#about-section {
+  background-color: var(--darkgrey);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+section#about-section h2 {
+  color: var(--secondary-color);
+}
+
+section#about-section div:first-of-type {
+  width: 75%;
+  display: flex;
+  justify-content: space-between;
+}
+
+section#about-section div#about-me {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+section#about-section div#about-me p {
+  margin: 0;
+  padding: 5px 0;
+}
+
+section#about-section div#skills {
+  width: 50%;
+  padding: 10px;
+  border: 1px solid var(--secondary-color);
+  border-radius: 2px;
+}
+
+section#about-section div#skills p {
+  text-align: center;
+}
+
+section#about-section ul#stacks {
+  width: 100%;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+}
+
+section#about-section ul#stacks > li::first-line {
+  font-weight: bold;
+  color: var(--secondary-color);
+  text-align: center;
+}
+
+section#about-section ul#stacks > span.border-span {
+  border: 1px solid var(--secondary-color);
+}
+
+section#about-section ul#stacks li ul {
+  width: 100%;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+}
+
+section#about-section ul#stacks li ul li {
+  margin-top: 10px;
+  padding: 0 10px;
+}
+
+section#about-section ul#stacks li ul li + li {
+  border-left: 1px solid var(--secondary-color);
+}
+
+section#about-section div:last-of-type {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+section#about-section div:last-of-type a {
+  background-color: var(--primary-color);
+  color: var(--text-color);
+  width: fit-content;
+  padding: 15px;
+  border-radius: 5px;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+section#about-section div:last-of-type a:hover {
+  color: var(--secondary-color);
+}
+
+section#contact-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+section#contact-section div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+section#contact-section div > p {
+  color: var(--secondary-color);
+  margin: 0;
+}
+
+section#contact-section div#contact-options {
+  width: 50%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+section#contact-section a {
+  color: var(--text-color);
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2em;
+  font-weight: 600;
+}
+
+section#contact-section a:hover {
+  color: var(--secondary-color);
+  transition: transform 0.5s;
+  transform: translateY(-20px);
+}
+
+section#contact-section a i {
+  padding: 0 10px;
+}
+
+section#contact-section a:hover p {
+  text-decoration: underline;
+}
+
+footer {
+  background-color: var(--secondary-color);
+  text-align: center;
+}
+
+footer p {
+  margin: 0;
+  padding: 20px;
+}
+
+footer p a {
+  color: var(--text-color);
+  font-weight: bolder;
+  text-decoration: none;
+}
+
+footer p a:hover {
+  color: var(--primary-color);
+}
+
+@media(max-width: 1554px) {
+  span.xl-only {
+    display: none;
+  }
+
+  section#about-section ul#stacks li ul li + li {
+    border: none;
+  }
+}
+
+@media(max-width: 1164px) {
+  section#about-section div:first-of-type {
+    height: 50%;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  section#contact-section div#contact-options {
+    flex-direction: column;
+  }
+}
+
+@media(max-width: 989px) {
+  section > h2, section#contact-section div > h2 {
+    font-size: 2em;
+    text-align: center;
+  }
+
+  section > p, section#contact-section div > p {
+    font-size: 1em;
+    text-align: center;
+  }
+
+  section#welcome-section img#profile-photo {
+    width: 150px;
+    height: 150px;
+  }
+
+  section#about-section div#skills {
+    width: 100%;
+  }
+
+  section#contact-section div#contact-options {
+    width: 100%;
+  }
+}
+
+@media(max-width: 499px) {
+  navbar nav ul {
+    justify-content: space-around;
+  }
+
+  navbar nav ul li:last-child {
+    padding-right: 20px;
+  }
+
+  section#about-section div#skills {
+    overflow-x: scroll;
+    overflow-y: hidden;
+  }
+
+  section#about-section div#external-link {
+    text-align: center;
+  }
+}
